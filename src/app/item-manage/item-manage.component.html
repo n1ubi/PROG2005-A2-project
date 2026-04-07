@@ -1,0 +1,27 @@
+<h3>Add / Update / Delete Item</h3>
+
+<div>
+  <label>Name:</label>
+  <input [(ngModel)]="name"><br>
+
+  <label>Category:</label>
+  <input [(ngModel)]="cat"><br>
+
+  <label>Quantity:</label>
+  <input type="number" [(ngModel)]="qty"><br>
+
+  <label>Price:</label>
+  <input type="number" [(ngModel)]="price"><br>
+
+  <label>Supplier:</label>
+  <input [(ngModel)]="supplier"><br>
+
+  <label>Popular (Yes/No):</label>
+  <input [(ngModel)]="popular"><br>
+
+  <button (click)="add()">Add</button>
+  <button (click)="update()">Update</button>
+  <button (click)="delete()">Delete</button>
+</div>
+
+<div class="msg">{{ msg }}</div>

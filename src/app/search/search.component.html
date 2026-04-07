@@ -1,0 +1,7 @@
+<h3>Search Items</h3>
+<input [(ngModel)]="keyword" placeholder="Search by name">
+<button (click)="doSearch()">Search</button>
+
+<div *ngFor="let item of result">
+  {{ item.itemId }} - {{ item.itemName }} | {{ item.stockStatus }}
+</div>
