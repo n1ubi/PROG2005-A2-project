@@ -1,0 +1,33 @@
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: #2c82c9;
+  text-align: center;
+}
+
+.content-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h3 {
+  color: #2c82c9;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+ul {
+  line-height: 1.8;
+  color: #333;
+}
+
+li {
+  margin: 8px 0;
+}

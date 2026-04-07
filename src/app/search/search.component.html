@@ -1,7 +1,29 @@
-<h3>Search Items</h3>
-<input [(ngModel)]="keyword" placeholder="Search by name">
-<button (click)="doSearch()">Search</button>
+<!-- * Assignment 2 Part 2 - Author: Qinglai Tian * -->
+<div class="container">
+  <h1>🔍 Search Items</h1>
 
-<div *ngFor="let item of result">
-  {{ item.itemId }} - {{ item.itemName }} | {{ item.stockStatus }}
+  <div class="search-card">
+    <div class="search-group">
+      <label>Search by Name:</label>
+      <input type="text" [(ngModel)]="keyword" placeholder="Enter item name">
+      <button (click)="doSearch()">Search</button>
+      <button (click)="showPopular()">Show Popular Items</button>
+    </div>
+  </div>
+
+  <div class="result-card" *ngIf="result.length > 0">
+    <h3>Search Results ({{ result.length }})</h3>
+    <div class="item-list">
+      <div *ngFor="let item of result" class="item-card">
+        <h4>{{ item.itemName }}</h4>
+        <p>ID: {{ item.itemId }} | Category: {{ item.category }}</p>
+        <p>Price: ${{ item.price }} | Stock: {{ item.stockStatus }}</p>
+        <p>Popular: {{ item.popularItem }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="msg" *ngIf="searched && result.length === 0 && keyword">
+    ❌ No items found for: {{ keyword }}
+  </div>
 </div>

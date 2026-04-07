@@ -1,3 +1,4 @@
+// Assignment 2 Part 2 - Author: Qinglai Tian
 import { Component } from '@angular/core';
 
 @Component({

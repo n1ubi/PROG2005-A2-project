@@ -1,3 +1,4 @@
+// Assignment 2 Part 2 - Author: Qinglai Tian
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';

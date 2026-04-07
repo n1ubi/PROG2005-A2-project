@@ -5,7 +5,7 @@ export interface Item {
   quantity: number;
   price: number;
   supplierName: string;
-  stockStatus: 'In Stock' | 'Out of Stock';
+  stockStatus: 'In Stock' | 'Low Stock' | 'Out of Stock';
   popularItem: 'Yes' | 'No';
   comment?: string;
 }

@@ -1,3 +1,4 @@
+// Assignment 2 Part 2 - Author: Qinglai Tian
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
