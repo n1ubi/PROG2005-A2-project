@@ -92,3 +92,29 @@ h3 {
   background: #f8f9fa;
   border-radius: 8px;
 }
+
+/* Top navigation bar */
+.top-nav {
+  background: #2c82c9;
+  padding: 14px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+  .top-nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+    .top-nav a:hover {
+      text-decoration: underline;
+    }
+
+.container {
+  margin-top: 20px !important;
+}

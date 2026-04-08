@@ -1,20 +1,30 @@
 <!-- * Assignment 2 Part 2 - Author: Qinglai Tian * -->
+
+<!-- Top navigation bar -->
+<nav class="top-nav">
+  <a routerLink="/">Home</a>
+  <a routerLink="/manage">Manage Items</a>
+  <a routerLink="/search">Search Items</a>
+  <a routerLink="/privacy-security">Privacy & Security</a>
+  <a routerLink="/help">Help & FAQ</a>
+</nav>
+
 <div class="container">
   <h1>📦 Inventory Management</h1>
 
-  <!-- 显示区域（和Part1完全一致） -->
+  <!-- Display area -->
   <div class="display-area">
     <h3>Item Display Area</h3>
     <div id="itemDisplayArea" class="display-content">{{ message }}</div>
   </div>
 
-  <!-- 快捷操作按钮 -->
+  <!-- Quick operation button -->
   <div class="action-buttons">
     <button (click)="showAllItems()">Show All Items</button>
     <button (click)="showPopularItems()">Show Popular Items</button>
   </div>
 
-  <!-- 添加商品 -->
+  <!-- Add product -->
   <div class="form-card">
     <h3>Add New Item</h3>
     <div class="form-group">
@@ -48,7 +58,7 @@
     <button class="submit-btn" (click)="addNewItem()">Add Item</button>
   </div>
 
-  <!-- 更新商品 -->
+  <!-- Update the product -->
   <div class="form-card">
     <h3>Update Item (By Name)</h3>
     <div class="form-group">
@@ -74,7 +84,7 @@
     <button class="submit-btn" (click)="updateItem()">Update Item</button>
   </div>
 
-  <!-- 删除商品 -->
+  <!-- Delete the product -->
   <div class="form-card">
     <h3>Delete Item (By Name)</h3>
     <div class="form-group">
